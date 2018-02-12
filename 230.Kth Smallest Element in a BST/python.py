@@ -12,15 +12,16 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        stack, ptr, count = [root], root, 0
-        while len(stack):
-            if ptr!=None:
-                stack.append(ptr)
-                ptr = ptr.left
+        stack, count, curr = [], 0, root
+        while True:
+            if curr!= None:
+                stack.append(curr)
+                curr = curr.left
             else:
                 curr = stack.pop()
-                count += 1
+                count+=1
                 if count==k:    return curr.val
-                ptr = curr.right
-        return 0
+                curr = curr.right
+                
+                
         
