@@ -1,0 +1,21 @@
+class Solution(object):
+    def singleNonDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        left, right = 0, len(nums)-1
+        while left < right:
+            mid = (left + right) // 2
+            if nums[mid-1] == nums[mid]:
+                if (mid+1)%2 == 0:
+                    left = mid+1
+                else:
+                    right = mid-2
+            if nums[mid+1] == nums[mid]:
+                if mid%2 == 0:
+                    left = mid+2
+                else:
+                    right = mid-1
+        return nums[left]
+                
