@@ -1,39 +1,33 @@
-class Node:
+class Node(object):
     def __init__(self, key, val):
-        self.k = key
-        self.v = val
+        self.key = key
+        self.val = val
         self.next = None
-        self.pre = None
+        self.prev = None
     
-
 class LRUCache(object):
 
     def __init__(self, capacity):
         """
         :type capacity: int
         """
-        self.dic = dict()
         self.head = Node(0,0)
         self.tail = Node(0,0)
+        self.dic = {}
         self.cap = capacity
-        self.head.next = self.tail
-        self.tail.pre = self.head
+        self.size = 0
+        self.head.next, self.tail.prev = self.tail, self.head
 
     def get(self, key):
         """
         :type key: int
         :rtype: int
         """
-        if key in self.dic:
-            node = self.dic[key]
-            value = node.v
-            #remove from DLlist
-            self.removeNode(node)
-            #add to tail of DLlist
-            self.appendNode(node)
-            return value
-        return -1
-        
+        if key not in self.dic: return -1
+        ret = self.dic[key].val
+        self.removeNode(key)
+        self.appendNode(key, ret)
+        return ret
 
     def put(self, key, value):
         """
@@ -41,38 +35,29 @@ class LRUCache(object):
         :type value: int
         :rtype: void
         """
+        # check if the cache is full or key in cache
         if key in self.dic:
-            #already in, remove node, append to tail
-            node = self.dic[key]
-            node.v = value
-            self.removeNode(node)
-            self.appendNode(node)
-            return
-        if len(self.dic) >= self.cap:
-            #if the cache is full, remove from the head
-            toRemove = self.head.next
-            self.removeNode(toRemove)
-            del self.dic[toRemove.k]
-        #create a new node, insert to dict, append
-        newnode = Node(key, value)
-        self.dic[key] = newnode
-        self.appendNode(newnode)
+            self.removeNode(key)
+        elif self.size == self.cap:
+            # remove the first node
+            self.removeNode(self.head.next.key)
+        else:
+            self.size += 1
+        # append new node in the end
+        self.appendNode(key, value)
+            
+    def removeNode(self, key):
+        node = self.dic[key]
+        prevnode, nextnode = node.prev, node.next
+        prevnode.next, nextnode.prev = nextnode, prevnode
+        del self.dic[key]
         
-    def removeNode(self, n):
-        prenode = n.pre
-        nextnode = n.next
-        prenode.next = nextnode
-        nextnode.pre = prenode
-        
-    def appendNode(self, n):
-        prenode = self.tail.pre
-        prenode.next = n
-        n.pre = prenode
-        n.next = self.tail
-        self.tail.pre = n
-        
-
-
+    def appendNode(self, key, val):
+        newNode = Node(key, val)
+        self.dic[key] = newNode
+        lastnode = self.tail.prev
+        lastnode.next, newNode.prev, newNode.next, self.tail.prev = newNode, lastnode, self.tail, newNode
+    
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
 # param_1 = obj.get(key)
