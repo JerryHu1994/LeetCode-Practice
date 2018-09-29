@@ -11,30 +11,19 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        if head==None:  return head
+        if k == 1:  return head
+        # check if there is k nodes left
+        curr = head
+        for i in range(k):
+            if not curr:    return head
+            curr = curr.next
         dummy = ListNode(0)
         dummy.next = head
-        pre = curr = dummy
-        while True:
-            currcount = 0
-            nextpre = pre.next
-            # move k steps further
-            while curr != None:
-                curr = curr.next
-                currcount += 1
-                if currcount == k:
-                    break
-            if currcount != k or curr == None:  break
-            last = curr.next
-            # reverse the nodes
-            c = pre.next
-            cc = c.next
-            c.next = last
-            while c != curr:
-                temp = cc.next
-                cc.next = c
-                c, cc = cc, temp
-            pre.next = curr
-            #reset
-            pre = curr = nextpre
+        first, second, third = head, head.next, head.next.next
+        for i in range(k-1):
+            second.next = first
+            first, second = second, third
+            if third:  third = third.next
+        dummy.next = first
+        head.next = self.reverseKGroup(second, k)
         return dummy.next

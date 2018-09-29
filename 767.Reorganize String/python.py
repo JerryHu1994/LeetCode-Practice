@@ -4,23 +4,24 @@ class Solution(object):
         :type S: str
         :rtype: str
         """
-        counter = collections.Counter(S)
-        maxfre = counter.most_common(1)[0][1]
-        if maxfre > len(S) - maxfre + 1:
-            return ""
-        ret = [0 for i in range(len(S))]
-        sortedkeys = [i[0] for i in counter.most_common()]
-        count = 0 
-        keyidx = 0
-        retidx = 0
-        while count != len(S):
-            while counter[sortedkeys[keyidx]] > 0:
-                counter[sortedkeys[keyidx]] -= 1
-                ret[retidx] = sortedkeys[keyidx]
-                retidx += 2
-                count += 1
-                if retidx >= len(S):    retidx = 1
-            keyidx += 1
-        return "".join(ret)
-        
-                
+        c = collections.Counter(S)
+        total_len = len(S)
+        sorted_keys = c.most_common()
+        maxkeys = sorted_keys[0][1]
+        if maxkeys > len(S)-maxkeys+1:  return ""  # return empty string
+        heap = [(-p[1], p[0]) for p in sorted_keys]
+        heapq.heapify(heap)
+        ret = ""
+        while len(heap):
+            curr = heapq.heappop(heap)
+            if len(ret) == 0 or curr[1] != ret[-1]:
+                if curr[0]+1 != 0:
+                    heapq.heappush(heap, (curr[0]+1, curr[1]))
+                ret += curr[1]
+            else:
+                second = heapq.heappop(heap)
+                ret += second[1]
+                if second[0]+1 != 0:
+                    heapq.heappush(heap, (second[0]+1, second[1]))
+                heapq.heappush(heap, curr)
+        return ret

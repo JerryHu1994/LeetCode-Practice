@@ -43,11 +43,10 @@ class NestedIterator(object):
         :rtype: bool
         """
         while len(self.stack) != 0 and not self.stack[-1].isInteger():
-            curr = self.stack.pop()
-            currlist = curr.getList()[::-1]
-            self.stack.extend(currlist)
-            
+            firstlist = self.stack.pop().getList()
+            self.stack += firstlist[::-1]
         return True if len(self.stack) > 0 else False
+        
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

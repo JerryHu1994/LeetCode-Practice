@@ -47,3 +47,14 @@ class Solution(object):
                 right = mid-1
         if not found:
             return [-1, -1]
+
+
+class Solution(object):
+    def searchRange(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        if target not in set(nums): return [-1, -1]
+        return [bisect.bisect_left(nums,target), bisect.bisect_right(nums, target)-1]
