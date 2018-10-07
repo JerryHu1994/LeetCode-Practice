@@ -5,20 +5,6 @@ class Solution(object):
         :type rec2: List[int]
         :rtype: bool
         """
-        if rec1[3] < rec2[1]:
-            return False
-        elif rec1[1] < rec2[1] and rec2[1] < rec1[3]:
-            if rec2[2] <= rec1[0]:
-                return False
-            if rec2[0] >= rec1[2]:
-                return False
-            return True
-        else:
-            if rec2[3] < rec1[1]:
-                return False
-            if rec2[2] <= rec1[0]:
-                return False
-            if rec2[0] >= rec1[2]:
-                return False
-            return True
-            
+        r1x1, r1y1, r1x2, r1y2 = rec1
+        r2x1, r2y1, r2x2, r2y2 = rec2
+        return False if r2x1 >= r1x2 or r2y1 >= r1y2 or r2x2 <= r1x1 or r2y2 <= r1y1 else True
