@@ -20,3 +20,13 @@ class Solution(object):
             curr = heapq.heappop(heap)
             ret.append(curr[1])
         return ret
+
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        cnt = collections.Counter(nums)
+        return [i[0] for i in cnt.most_common(k)]

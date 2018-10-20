@@ -12,20 +12,14 @@ class Solution(object):
         :type p: TreeNode
         :rtype: TreeNode
         """
-        if root == None:
-            return None
-        if p.val == root.val:
-            if root.right == None:
-                return None
-            else:
-                curr = root.right
-                while curr.left != None:
-                    curr = curr.left
-                return curr
-        if p.val < root.val:
-            ret = self.inorderSuccessor(root.left, p)
-            if ret == None:
-                return root
-        else:
-            ret = self.inorderSuccessor(root.right, p)
-        return ret
+        if root == None:    return None
+        # the root is p, found next inorder
+        if root.val == p.val:
+            curr = root.right
+            while curr and curr.left != None:    curr = curr.left
+            return curr
+        # explore left
+        if p.val < root.val:   
+            left = self.inorderSuccessor(root.left, p)
+            return root if left == None else left
+        return self.inorderSuccessor(root.right, p)
