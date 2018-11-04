@@ -13,9 +13,10 @@ class SnakeGame(object):
         """
         self.width = width
         self.height = height
-        self.foodlist = food
-        self.snakelist = [[0, 0]]
-        self.foodcnt = 0
+        self.food = []
+        for f in food:  self.food.append((f[0], f[1]))
+        self.snake = [(0, 0)] # tail - body - head
+        self.score = 0
 
     def move(self, direction):
         """
@@ -26,33 +27,20 @@ class SnakeGame(object):
         :type direction: str
         :rtype: int
         """
-        head = self.snakelist[0][:]
-        if direction == "U":
-            head[0] -= 1
-        elif direction == "L":
-            head[1] -= 1
-        elif direction == "R":
-            head[1] += 1
+        dirs = {'U': (0, -1), 'L': (-1, 0), 'R': (1, 0), 'D' : (0, 1)}
+        dirx, diry = dirs[direction]
+        heady, headx = self.snake[-1] # get the head
+        nextx, nexty = headx+dirx, heady+diry
+        if nextx < 0 or nextx >= self.width or nexty < 0 or nexty >= self.height or (nexty, nextx) in self.snake[1:]:   return -1
+        if len(self.food) == 0: 
+            self.snake.pop(0)
+        elif (nexty, nextx) == self.food[0]:
+            self.score += 1
+            self.food.pop(0)
         else:
-            head[0] += 1
-        # check if it is out of bound
-        if head[0] < 0 or head[0] >= self.height or head[1] < 0 or head[1] >= self.width:
-            return -1
-        
-        # check if the next one is the food
-        if len(self.foodlist) > 0 and head == self.foodlist[0]:
-            self.foodlist = self.foodlist[1:]
-            self.foodcnt += 1
-            self.snakelist.insert(0, head)
-            return self.foodcnt
-        else:
-            # check if the snake bites itself
-            body = self.snakelist[:-1]
-            if head in body:
-                return -1
-            self.snakelist = [head] + body
-        
-        return self.foodcnt
+            self.snake.pop(0) # pop out the tail
+        self.snake.append((nexty, nextx))
+        return self.score
 
 # Your SnakeGame object will be instantiated and called as such:
 # obj = SnakeGame(width, height, food)

@@ -1,43 +1,37 @@
 class Node(object):
     def __init__(self):
-        self.children = {}
-        self.words = []
-    
+        self.children = collections.defaultdict(Node)
+        self.word = None
+        
 class Solution(object):
-    
-    def insert(self, word, trie):
-        curr = trie
-        for ind, c in enumerate(word):
-            if c not in curr.children:
-                curr.children[c] = Node()  
-            curr = curr.children[c]
-        curr.words.append(word)
-    
-    def dfs(self, board, y, x, trie):
-        if y < 0 or y >= len(board) or x < 0 or x >= len(board[0]) or board[y][x] == None or board[y][x] not in trie.children:  return
-        currval = board[y][x]
-        if len(trie.children[currval].words) != 0:
-            for w in trie.children[currval].words: self.ret.add(w)
-        board[y][x] = None
-        self.dfs(board, y-1, x, trie.children[currval])
-        self.dfs(board, y, x-1, trie.children[currval])
-        self.dfs(board, y, x+1, trie.children[currval])
-        self.dfs(board, y+1, x, trie.children[currval])
-        board[y][x] = currval
-    
     def findWords(self, board, words):
         """
         :type board: List[List[str]]
         :type words: List[str]
         :rtype: List[str]
         """
-        if len(board) == 0 or len(board[0]) == 0:   return []
-        height, width = len(board), len(board[0])
+        if len(board) == 0 or len(board[0]) == 0 or len(words) == 0:    return []
         trie = Node()
-        self.ret = set()
-        # add for words to the dic
-        for w in words: self.insert(w, trie)
+        # build the trie
+        for w in words:
+            curr = trie
+            for c in w: curr = curr.children[c]
+            curr.word = w
+        height, width, ret = len(board), len(board[0]), set()
+        visited = [[0]*width for i in range(height)]
+        def dfs(y, x, visited, curr):
+            # check if a word ends here
+            if curr.word != None:   ret.add(curr.word)
+            if y < 0 or y >= height or x < 0 or x >= width or visited[y][x]:    return
+            if board[y][x] not in curr.children:    return
+            visited[y][x] = 1
+            dfs(y-1, x, visited, curr.children[board[y][x]])
+            dfs(y+1, x, visited, curr.children[board[y][x]])
+            dfs(y, x-1, visited, curr.children[board[y][x]])
+            dfs(y, x+1, visited, curr.children[board[y][x]])
+            visited[y][x] = 0
+        # iterate the borad
         for i in range(height):
             for j in range(width):
-                self.dfs(board, i, j, trie)
-        return list(self.ret)
+                dfs(i, j, visited, trie)        
+        return list(ret)
