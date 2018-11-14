@@ -1,20 +1,4 @@
 class Solution(object):
-    
-    def helper(self, s, wlist):
-        if s in self.mem:   return self.mem[s]
-        ret = []
-        for w in wlist:
-            if s == w:  
-                ret.append(w)
-                continue
-            if s[:len(w)] == w:
-                right = self.helper(s[len(w):], wlist)
-                if len(right):
-                    for i in right:
-                        ret.append(w + " " +i)
-        self.mem[s] = ret
-        return ret
-    
     def wordBreak(self, s, wordDict):
         """
         :type s: str
@@ -22,4 +6,16 @@ class Solution(object):
         :rtype: List[str]
         """
         self.mem = collections.defaultdict(list)
-        return self.helper(s, wordDict)
+        wordlen, wordset = set([len(w) for w in wordDict]), set(wordDict)
+        def helper(start):
+            if start == len(s): return [""]
+            if start in self.mem:   return self.mem[start]
+            currlist = []
+            for l in wordlen:
+                if s[start:start+l] in wordset:
+                    retlist = helper(start+l)
+                    for string in retlist:  currlist.append(s[start:start+l]+" "+string if string != "" else s[start:start+l])
+            self.mem[start] = currlist
+            return currlist
+        helper(0)
+        return self.mem[0]

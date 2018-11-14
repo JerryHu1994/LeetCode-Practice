@@ -17,3 +17,24 @@ class Solution(object):
             if count == len(diff):  return i
         return -1
             
+# O(n) solution
+class Solution(object):
+    def canCompleteCircuit(self, gas, cost):
+        """
+        :type gas: List[int]
+        :type cost: List[int]
+        :rtype: int
+        """
+        if sum(cost) > sum(gas):    return -1
+        n = len(gas)
+        diff = [gas[i]-cost[i] for i in range(n)]
+        start, end = 0, n-1
+        s = diff[start]
+        while end > start:
+            if s >= 0:
+                start += 1
+                s += diff[start]
+            else:
+                s += diff[end]
+                end -= 1
+        return (start+1)%n if s >= 0 else -1
