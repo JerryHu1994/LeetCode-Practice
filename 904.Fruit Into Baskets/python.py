@@ -4,21 +4,15 @@ class Solution(object):
         :type tree: List[int]
         :rtype: int
         """
-        slow, fast, currdic, ret = 0, 0, collections.defaultdict(int), 0
-        while slow < len(tree):
-            currlen = 0
-            # keep moving fast until we have a third fruit
-            while fast < len(tree) and len(currdic) <= 2:
-                currdic[tree[fast]] += 1
-                if len(currdic) <= 2:
-                    currlen += 1
-                    fast += 1
-            ret = max(ret, fast-slow)
-            if fast >= len(tree):   break
-            # keep moving slow until we have only two fruits
-            while len(currdic) > 2:
-                currdic[tree[slow]] -= 1
-                if currdic[tree[slow]] == 0:    del currdic[tree[slow]]
-                slow += 1
-            fast += 1
+        dic, ret = collections.defaultdict(int), 0
+        left, right = 0, 0
+        while right < len(tree):
+            # advance the right
+            dic[tree[right]] += 1
+            right += 1
+            if len(dic) <= 2:   ret = max(right-left, ret)
+            while len(dic) > 2:
+                dic[tree[left]] -= 1
+                if dic[tree[left]] == 0:    del dic[tree[left]]
+                left += 1
         return ret
