@@ -1,24 +1,18 @@
 class Solution(object):
-    def dailyTemperatures(self, temperatures):
+    def dailyTemperatures(self, T):
         """
-        :type temperatures: List[int]
+        :type T: List[int]
         :rtype: List[int]
         """
-        ret = [0]*len(temperatures)
-        q = []
-        heapq.heappush(q, (temperatures[0], 0))
-        for i in range(1, len(temperatures)):
-            if len(q) == 0:
-                heapq.heappush(q, (temperatures[i], i))
+        stack = []
+        ret = [0]*len(T)
+        for ind, val in enumerate(T):
+            if len(stack) == 0:
+                stack.append((val, ind))
                 continue
-            while True:
-                if len(q) == 0: break
-                curr = heapq.heappop(q)
-                if curr[0] < temperatures[i]:
-                    #update for a warmer temperature
-                    ret[curr[1]] = i - curr[1]
-                else:
-                    heapq.heappush(q, curr)
-                    break
-            heapq.heappush(q, (temperatures[i], i))
+            else:
+                while len(stack) and stack[-1][0] < val:
+                    temp, index = stack.pop()
+                    ret[index] = ind - index
+                stack.append((val, ind))
         return ret
