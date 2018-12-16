@@ -6,7 +6,6 @@ class Solution(object):
             return self.helper(B, A, k)
         if la == 0: return B[k-1]
         if k == 1:  return min(A[0], B[0])
-        print la, k
         ptra = min(k/2, la)
         ptrb = k - ptra
         if A[ptra - 1] <= B[ptrb - 1]:
