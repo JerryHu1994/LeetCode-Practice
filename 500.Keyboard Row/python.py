@@ -10,16 +10,15 @@ class Solution(object):
         ret = []
         sets = [set1, set2, set3]
         for w in words:
-            found = False
-            for s in sets:
-                for ind, c in enumerate(w):
-                    if c.upper() not in s:
-                        break
-                    if ind == len(w)-1:
-                        found = True
-                        ret.append(w)
-                if found:   break
+            chars = [c.upper()  for c in w]
+            set_ind = None
+            for i in range(3):
+                if chars[0] in sets[i]:
+                    set_ind = i
+                    break
+            for c in chars:
+                if c not in sets[set_ind]:
+                    break
+            else:
+                ret.append(w)
         return ret
-            
-                    
-                    
