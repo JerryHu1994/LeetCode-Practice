@@ -1,6 +1,6 @@
 class TrieNode(object):
     def __init__(self):
-        self.map = {}
+        self.map = collections.defaultdict(TrieNode)
         self.val = 0
 
 class MapSum(object):
@@ -23,7 +23,7 @@ class MapSum(object):
         curr = self.root
         curr.val += delta
         for i in key:
-            curr = curr.map.setdefault(i, TrieNode())
+            curr = curr.map[i]
             curr.val += delta
 
     def sum(self, prefix):

@@ -9,7 +9,6 @@ class Solution(object):
         ind, ret, currdiff = 2, 1, 0
         while ind < len(nums):
             currdiff = nums[ind] - nums[ind-1]
-            print ind, currdiff, prediff
             if currdiff*prediff < 0:
                 ret += 1
                 prediff = currdiff

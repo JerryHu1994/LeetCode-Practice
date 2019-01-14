@@ -8,37 +8,26 @@ class Node(object):
         self.child = child
 """
 class Solution(object):
-    
-    # return the tail of the current level
-    def helper(self, head):
-        curr = head
-        rettail = None
-        while curr!=None:
-            if curr.child != None:
-                childhead = curr.child
-                childtail = self.helper(childhead)
-                currnext = curr.next
-                if currnext != None:
-                    curr.next, childhead.prev, childtail.next, currnext.prev = childhead, curr, currnext, childtail
-                else:
-                    curr.next, childhead.prev, childtail.next = childhead, curr, currnext
-                curr = childtail
-                if curr.next == None:   rettail = curr
-            else:
-                if curr.next == None:   rettail = curr
-                curr = curr.next
-        return rettail
-        
-        
     def flatten(self, head):
         """
         :type head: Node
         :rtype: Node
         """
-        if head == None:    return head
-        self.helper(head)
-        curr = head
-        while curr.next!=None:
-            curr.child, curr = None, curr.next
-        return head
-        
+        def helper(h):
+            curr = h
+            pre = h
+            while curr != None:
+                if curr.child:
+                    nexthead, nexttail = helper(curr.child)
+                    currnext = curr.next
+                    curr.next, nexthead.prev, nexttail.next = nexthead, curr, currnext
+                    if currnext != None:
+                        currnext.prev = nexttail
+                    curr.child = None
+                    pre = nexttail
+                    curr = currnext
+                else:
+                    pre = curr
+                    curr = curr.next
+            return h, pre
+        return helper(head)[0]
