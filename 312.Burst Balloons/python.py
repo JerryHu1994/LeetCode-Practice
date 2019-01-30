@@ -12,6 +12,5 @@ class Solution:
                 start, end = i, i+length-1
                 if end > l: continue
                 for j in range(start, end+1):
-                    dp[start][end] = max(dp[start][end], nums[j]*nums[start-1]*nums[end+1]+dp[start][j-1]+dp[j+1][end])                
-        print (dp)
+                    dp[start][end] = max(dp[start][end], nums[j]*nums[start-1]*nums[end+1]+dp[start][j-1]+dp[j+1][end])
         return dp[1][l]

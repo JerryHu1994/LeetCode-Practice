@@ -4,51 +4,49 @@ class ExamRoom(object):
         """
         :type N: int
         """
-        self.intervals = []
+        self.hq = [(self.dis(-1, N), -1, N)]
         self.N = N
 
+    # calculates the distance between two points
+    def dis(self, left, right):
+        if left == -1:
+            return -right
+        elif right == self.N:
+            return -(self.N - 1 - left)
+        else:
+            return -(abs(right-left)//2)
+        
     def seat(self):
         """
         :rtype: int
         """
-        if len(self.intervals) == 0:
-            self.intervals.append(0)
-            return 0
-        currmax, currpair, maxidx = -1, None, 0
-        for i in range(0, len(self.intervals) - 1):
-            if self.intervals[i+1] - self.intervals[i] == 1:
-                continue
-            else:
-                if (self.intervals[i+1] - self.intervals[i])//2 > currmax:
-                    currmax = (self.intervals[i+1] - self.intervals[i])//2
-                    currpair = [self.intervals[i], self.intervals[i+1]]
-                    maxidx = i+1
-        #check back
-        if self.N-1 not in self.intervals:
-            if self.N-1 - self.intervals[-1] > currmax:
-                currmax = self.N-1 - self.intervals[-1]
-                currpair = [self.N-1]
-                maxidx = len(self.intervals)
-        # check front
-        if 0 not in self.intervals:
-            if self.intervals[0] - 0 >= currmax:
-                currmax = self.intervals[0] - 0
-                currpair = [0]
-                maxidx = 0
-        
-        if len(currpair) == 2:
-            ret = (currpair[0] + currpair[1])//2
+        currdis, start, end = heapq.heappop(self.hq)
+        if start == -1:
+            seat = 0
+        elif end == self.N:
+            seat = self.N - 1
         else:
-            ret = currpair[0]
-        self.intervals.insert(maxidx, ret)
-        return ret
+            seat = (start+end)//2
+        heapq.heappush(self.hq, (self.dis(start, seat), start, seat))
+        heapq.heappush(self.hq, (self.dis(seat, end), seat, end))
+        return seat
 
     def leave(self, p):
         """
         :type p: int
         :rtype: void
         """
-        self.intervals.remove(p)
+        pre_int, next_int = None, None
+        for interval in self.hq:
+            if interval[2] == p:
+                pre_int = interval
+            elif interval[1] == p:
+                next_int = interval
+            if pre_int and next_int:   break
+        self.hq.remove(pre_int)
+        self.hq.remove(next_int)
+        heapq.heapify(self.hq)
+        heapq.heappush(self.hq, (self.dis(pre_int[1], next_int[2]), pre_int[1], next_int[2]))
 
 
 # Your ExamRoom object will be instantiated and called as such:
