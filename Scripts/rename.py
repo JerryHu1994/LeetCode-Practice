@@ -1,11 +1,10 @@
-"This script renames the python files"
+"This script renames the python files to #-problem-title format"
 
 import os
 
 prepath = "../Solutions/"
 
 for file in os.listdir(prepath):
-	num, title = file.split('.')
-	title.lstrip(" ").rstrip(" ")
-	new_name = "-".join(title.split())
-	os.rename(prepath + file, prepath + new_name)
+	new_name = file.replace(" ", "-").replace(".", "-")
+	#print os.path.join(prepath, file), os.path.join(prepath, new_name)
+	os.rename(os.path.join(prepath, file), os.path.join(prepath, new_name))
