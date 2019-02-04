@@ -68,9 +68,9 @@ def gen_table(sol_dir, lc_name, abs_path):
 		problem_sol_link = ' <br> '.join(solution_with_link)
 		content = [problem_idx, problem_name, problem_ac_rate, problem_difficulty, problem_sol_link]
 		table.append("|"+"|".join(content)+"|")
-	lc_summary = "This repositoy contains my solutions to Leetcode algorithm problem. Currently I finished {} problems in total: {} Easy, {} Medium and {} Hard.".format(len(finished_problems), cnt['Easy'], cnt['Medium'], cnt['Hard'])
-	script_summary = "Python scripts are included to crawl the problem info from [Leetcode](https://leetcode.com/), summarize the problems into a table and output the REAMME.md."
-	return [lc_summary, script_summary] + table
+	lc_summary = "**This repositoy contains my solutions to Leetcode algorithm problem. Currently I finished {} problems in total: {} Easy, {} Medium and {} Hard.**".format(len(finished_problems), cnt['Easy'], cnt['Medium'], cnt['Hard'])
+	script_summary = "**Python scripts are included to crawl the problem info from [Leetcode](https://leetcode.com/), summarize the problems into a table and output the REAMME.md.**"
+	return [lc_summary, script_summary, "\n"] + table
 
 if __name__ == "__main__":
 	# print get_finished_problems("../Solutions")
