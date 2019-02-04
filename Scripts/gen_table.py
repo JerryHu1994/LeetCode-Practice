@@ -75,4 +75,4 @@ def gen_table(sol_dir, lc_name, abs_path):
 if __name__ == "__main__":
 	# print get_finished_problems("../Solutions")
 	contents = gen_table("../Solutions/", "lc.json", "Solutions/")
-	write_file(contents, "README.md")
+	write_file(contents, "../README.md")
