@@ -1,5 +1,7 @@
-**This repositoy contains my solutions to Leetcode algorithm problem. Currently I finished 809 problems in total: 255 Easy, 443 Medium and 111 Hard.**
-**Python scripts are included to crawl the problem info from [Leetcode](https://leetcode.com/), summarize the problems into a table and output the REAMME.md.**
+This repositoy contains my solutions to Leetcode algorithm problem. Currently I finished 809 problems in total: 255 Easy, 443 Medium and 111 Hard.
+
+
+Python scripts are included to crawl the problem info from [Leetcode](https://leetcode.com/), summarize the problems into a table and output the REAMME.md.
 
 
 | # | Problem | Accept Rate | Difficulty | Solutions |
