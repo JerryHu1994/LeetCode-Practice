@@ -1,6 +1,9 @@
 This repositoy contains my solutions to Leetcode algorithm problem. Currently I finished 809 problems in total: 255 Easy, 443 Medium and 111 Hard.
 
 
+Currently most solutions are written in python. I am working on adding more solutions in CPP.
+
+
 Python scripts are included to crawl the problem info from [Leetcode](https://leetcode.com/), summarize the problems into a table and output the REAMME.md.
 
 
@@ -57,7 +60,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |50|[Pow(x, n)](https://leetcode.com/problems/pow(x,-n))|27%|Medium|[python.py](Solutions/50-Pow(x,-n)/python.py)|
 |51|[N-Queens](https://leetcode.com/problems/n-queens)|37%|Hard|[python.py](Solutions/51-N-Queens/python.py)|
 |52|[N-Queens II](https://leetcode.com/problems/n-queens-ii)|50%|Hard|[python.py](Solutions/52-N-Queens-II/python.py)|
-|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|42%|Easy|[python.py](Solutions/53-Maximum-Subarray/python.py)|
+|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|43%|Easy|[python.py](Solutions/53-Maximum-Subarray/python.py)|
 |54|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix)|29%|Medium|[python.py](Solutions/54-Spiral-Matrix/python.py)|
 |55|[Jump Game](https://leetcode.com/problems/jump-game)|31%|Medium|[python.py](Solutions/55-Jump-Game/python.py)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|35%|Medium|[python.py](Solutions/56-Merge-Intervals/python.py)|
@@ -93,9 +96,9 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |90|[Subsets II](https://leetcode.com/problems/subsets-ii)|41%|Medium|[python.py](Solutions/90-Subsets-II/python.py)|
 |91|[Decode Ways](https://leetcode.com/problems/decode-ways)|22%|Medium|[python.py](Solutions/91-Decode-Ways/python.py)|
 |92|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)|34%|Medium|[python.py](Solutions/92-Reverse-Linked-List-II/python.py)|
-|93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)|30%|Medium|[python.py](Solutions/93-Restore-IP-Addresses/python.py)|
-|94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|54%|Medium|[python.py](Solutions/94-Binary-Tree-Inorder-Traversal/python.py)|
-|95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|34%|Medium|[python.py](Solutions/95-Unique-Binary-Search-Trees-II/python.py)|
+|93|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)|31%|Medium|[python.py](Solutions/93-Restore-IP-Addresses/python.py)|
+|94|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)|55%|Medium|[python.py](Solutions/94-Binary-Tree-Inorder-Traversal/python.py)|
+|95|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)|35%|Medium|[python.py](Solutions/95-Unique-Binary-Search-Trees-II/python.py)|
 |96|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)|45%|Medium|[python.py](Solutions/96-Unique-Binary-Search-Trees/python.py)|
 |97|[Interleaving String](https://leetcode.com/problems/interleaving-string)|27%|Hard|[python.py](Solutions/97-Interleaving-String/python.py)|
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|25%|Medium|[python.py](Solutions/98-Validate-Binary-Search-Tree/python.py)|
@@ -141,12 +144,12 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii)|26%|Hard|[python.py](Solutions/140-Word-Break-II/python.py)|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|35%|Easy|[python.py](Solutions/141-Linked-List-Cycle/python.py) <br> [cpp.cpp](Solutions/141-Linked-List-Cycle/cpp.cpp)|
 |142|[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)|31%|Medium|[python.py](Solutions/142-Linked-List-Cycle-II/python.py)|
-|143|[Reorder List](https://leetcode.com/problems/reorder-list)|29%|Medium|[python.py](Solutions/143-Reorder-List/python.py)|
+|143|[Reorder List](https://leetcode.com/problems/reorder-list)|30%|Medium|[python.py](Solutions/143-Reorder-List/python.py)|
 |144|[Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)|50%|Medium|[python.py](Solutions/144-Binary-Tree-Preorder-Traversal/python.py)|
 |145|[Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)|46%|Hard|[python.py](Solutions/145-Binary-Tree-Postorder-Traversal/python.py)|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache)|24%|Hard|[python2.py](Solutions/146-LRU-Cache/python2.py) <br> [.DS_Store](Solutions/146-LRU-Cache/.DS_Store) <br> [python1.py](Solutions/146-LRU-Cache/python1.py)|
 |147|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)|36%|Medium|[python.py](Solutions/147-Insertion-Sort-List/python.py)|
-|148|[Sort List](https://leetcode.com/problems/sort-list)|33%|Medium|[python.py](Solutions/148-Sort-List/python.py)|
+|148|[Sort List](https://leetcode.com/problems/sort-list)|34%|Medium|[python.py](Solutions/148-Sort-List/python.py)|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)|31%|Medium|[python.py](Solutions/150-Evaluate-Reverse-Polish-Notation/python.py)|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)|16%|Medium|[python.py](Solutions/151-Reverse-Words-in-a-String/python.py)|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|28%|Medium|[python.py](Solutions/152-Maximum-Product-Subarray/python.py)|
@@ -182,7 +185,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |202|[Happy Number](https://leetcode.com/problems/happy-number)|44%|Easy|[python.py](Solutions/202-Happy-Number/python.py)|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|35%|Easy|[python.py](Solutions/203-Remove-Linked-List-Elements/python.py)|
 |204|[Count Primes](https://leetcode.com/problems/count-primes)|28%|Easy|[python.py](Solutions/204-Count-Primes/python.py)|
-|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|36%|Easy|[python.py](Solutions/205-Isomorphic-Strings/python.py)|
+|205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)|37%|Easy|[python.py](Solutions/205-Isomorphic-Strings/python.py)|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|52%|Easy|[python.py](Solutions/206-Reverse-Linked-List/python.py)|
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule)|36%|Medium|[python.py](Solutions/207-Course-Schedule/python.py)|
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-(prefix-tree))|36%|Medium|[python.py](Solutions/208-Implement-Trie-(Prefix-Tree)/python.py)|
@@ -196,7 +199,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii)|50%|Medium|[python.py](Solutions/216-Combination-Sum-III/python.py)|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|50%|Easy|[python.py](Solutions/217-Contains-Duplicate/python.py)|
 |218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)|31%|Hard|[python.py](Solutions/218-The-Skyline-Problem/python.py)|
-|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|34%|Easy|[python.py](Solutions/219-Contains-Duplicate-II/python.py)|
+|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|35%|Easy|[python.py](Solutions/219-Contains-Duplicate-II/python.py)|
 |220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)|19%|Medium|[python.py](Solutions/220-Contains-Duplicate-III/python.py)|
 |221|[Maximal Square](https://leetcode.com/problems/maximal-square)|32%|Medium|[python.py](Solutions/221-Maximal-Square/python.py)|
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|31%|Medium|[python.py](Solutions/222-Count-Complete-Tree-Nodes/python.py)|
@@ -207,20 +210,20 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|32%|Medium|[python.py](Solutions/227-Basic-Calculator-II/python.py)|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges)|35%|Medium|[python.py](Solutions/228-Summary-Ranges/python.py)|
 |229|[Majority Element II](https://leetcode.com/problems/majority-element-ii)|31%|Medium|[python.py](Solutions/229-Majority-Element-II/python.py)|
-|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|49%|Medium|[python.py](Solutions/230-Kth-Smallest-Element-in-a-BST/python.py)|
+|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|50%|Medium|[python.py](Solutions/230-Kth-Smallest-Element-in-a-BST/python.py)|
 |231|[Power of Two](https://leetcode.com/problems/power-of-two)|42%|Easy|[python.py](Solutions/231-Power-of-Two/python.py)|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|42%|Easy|[python.py](Solutions/232-Implement-Queue-using-Stacks/python.py)|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|35%|Easy|[python.py](Solutions/234-Palindrome-Linked-List/python.py)|
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|43%|Easy|[python.py](Solutions/235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree/python.py)|
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|35%|Medium|[python.py](Solutions/236-Lowest-Common-Ancestor-of-a-Binary-Tree/python.py)|
-|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|51%|Easy|[python.py](Solutions/237-Delete-Node-in-a-Linked-List/python.py)|
+|237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|52%|Easy|[python.py](Solutions/237-Delete-Node-in-a-Linked-List/python.py)|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)|53%|Medium|[python.py](Solutions/238-Product-of-Array-Except-Self/python.py)|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)|37%|Hard|[python.py](Solutions/239-Sliding-Window-Maximum/python.py)|
 |240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)|40%|Medium|[python.py](Solutions/240-Search-a-2D-Matrix-II/python.py)|
 |241|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses)|49%|Medium|[python.py](Solutions/241-Different-Ways-to-Add-Parentheses/python.py)|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|51%|Easy|[python.py](Solutions/242-Valid-Anagram/python.py)|
 |243|[Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance)|56%|Easy|[python.py](Solutions/243-Shortest-Word-Distance/python.py)|
-|244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii)|45%|Medium|[python.py](Solutions/244-Shortest-Word-Distance-II/python.py)|
+|244|[Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii)|46%|Medium|[python.py](Solutions/244-Shortest-Word-Distance-II/python.py)|
 |245|[Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii)|53%|Medium|[python.py](Solutions/245-Shortest-Word-Distance-III/python.py)|
 |246|[Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number)|42%|Easy|[python.py](Solutions/246-Strobogrammatic-Number/python.py)|
 |247|[Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii)|43%|Medium|[python.py](Solutions/247-Strobogrammatic-Number-II/python.py)|
@@ -319,7 +322,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|46%|Easy|[python.py](Solutions/350-Intersection-of-Two-Arrays-II/python.py)|
 |351|[Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns)|45%|Medium|[python.py](Solutions/351-Android-Unlock-Patterns/python.py)|
 |352|[Data Stream as Disjoint Intervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals)|43%|Hard|[python.py](Solutions/352-Data-Stream-as-Disjoint-Intervals/python.py)|
-|353|[Design Snake Game](https://leetcode.com/problems/design-snake-game)|29%|Medium|[python.py](Solutions/353-Design-Snake-Game/python.py)|
+|353|[Design Snake Game](https://leetcode.com/problems/design-snake-game)|30%|Medium|[python.py](Solutions/353-Design-Snake-Game/python.py)|
 |354|[Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes)|33%|Hard|[.DS_Store](Solutions/354-Russian-Doll-Envelopes/.DS_Store) <br> [python.py](Solutions/354-Russian-Doll-Envelopes/python.py)|
 |355|[Design Twitter](https://leetcode.com/problems/design-twitter)|27%|Medium|[python.py](Solutions/355-Design-Twitter/python.py)|
 |356|[Line Reflection](https://leetcode.com/problems/line-reflection)|31%|Medium|[python.py](Solutions/356-Line-Reflection/python.py)|
@@ -332,11 +335,11 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)|56%|Medium|[python.py](Solutions/364-Nested-List-Weight-Sum-II/python.py)|
 |366|[Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree)|64%|Medium|[python.py](Solutions/366-Find-Leaves-of-Binary-Tree/python.py)|
 |367|[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square)|39%|Easy|[python.py](Solutions/367-Valid-Perfect-Square/python.py)|
-|369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list)|55%|Medium|[python.py](Solutions/369-Plus-One-Linked-List/python.py)|
+|369|[Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list)|56%|Medium|[python.py](Solutions/369-Plus-One-Linked-List/python.py)|
 |370|[Range Addition](https://leetcode.com/problems/range-addition)|60%|Medium|[python.py](Solutions/370-Range-Addition/python.py)|
 |371|[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers)|51%|Easy|[cpp.cpp](Solutions/371-Sum-of-Two-Integers/cpp.cpp)|
 |373|[Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)|33%|Medium|[python.py](Solutions/373-Find-K-Pairs-with-Smallest-Sums/python.py)|
-|374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|38%|Easy|[python.py](Solutions/374-Guess-Number-Higher-or-Lower/python.py)|
+|374|[Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)|39%|Easy|[python.py](Solutions/374-Guess-Number-Higher-or-Lower/python.py)|
 |375|[Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii)|37%|Medium|[python.py](Solutions/375-Guess-Number-Higher-or-Lower-II/python.py)|
 |376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence)|37%|Medium|[python.py](Solutions/376-Wiggle-Subsequence/python.py)|
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv)|44%|Medium|[python.py](Solutions/377-Combination-Sum-IV/python.py)|
@@ -421,7 +424,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |468|[Validate IP Address](https://leetcode.com/problems/validate-ip-address)|21%|Medium|[python.py](Solutions/468-Validate-IP-Address/python.py)|
 |469|[Convex Polygon](https://leetcode.com/problems/convex-polygon)|35%|Medium|[python.py](Solutions/469-Convex-Polygon/python.py)|
 |470|[Implement Rand10() Using Rand7()](https://leetcode.com/problems/implement-rand10()-using-rand7())|44%|Medium|[python.py](Solutions/470-Implement-Rand10()-Using-Rand7()/python.py)|
-|473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square)|35%|Medium|[python.py](Solutions/473-Matchsticks-to-Square/python.py)|
+|473|[Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square)|36%|Medium|[python.py](Solutions/473-Matchsticks-to-Square/python.py)|
 |474|[Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes)|39%|Medium|[python.py](Solutions/474-Ones-and-Zeroes/python.py)|
 |475|[Heaters](https://leetcode.com/problems/heaters)|31%|Easy|[python.py](Solutions/475-Heaters/python.py)|
 |476|[Number Complement](https://leetcode.com/problems/number-complement)|62%|Easy|[python.py](Solutions/476-Number-Complement/python.py)|
@@ -470,7 +473,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |532|[K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array)|29%|Easy|[python.py](Solutions/532-K-diff-Pairs-in-an-Array/python.py)|
 |533|[Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii)|46%|Medium|[python.py](Solutions/533-Lonely-Pixel-II/python.py)|
 |535|[Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)|76%|Medium|[python.py](Solutions/535-Encode-and-Decode-TinyURL/python.py)|
-|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|43%|Medium|[python.py](Solutions/536-Construct-Binary-Tree-from-String/python.py)|
+|536|[Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)|44%|Medium|[python.py](Solutions/536-Construct-Binary-Tree-from-String/python.py)|
 |537|[Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication)|65%|Medium|[python.py](Solutions/537-Complex-Number-Multiplication/python.py)|
 |538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree)|50%|Easy|[python.py](Solutions/538-Convert-BST-to-Greater-Tree/python.py)|
 |539|[Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference)|47%|Medium|[python.py](Solutions/539-Minimum-Time-Difference/python.py)|
@@ -504,8 +507,8 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray)|30%|Easy|[python.py](Solutions/581-Shortest-Unsorted-Continuous-Subarray/python.py)|
 |582|[Kill Process](https://leetcode.com/problems/kill-process)|55%|Medium|[python.py](Solutions/582-Kill-Process/python.py)|
 |583|[Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)|44%|Medium|[python.py](Solutions/583-Delete-Operation-for-Two-Strings/python.py)|
-|589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|65%|Easy|[python.py](Solutions/589-N-ary-Tree-Preorder-Traversal/python.py)|
-|590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|65%|Easy|[python.py](Solutions/590-N-ary-Tree-Postorder-Traversal/python.py)|
+|589|[N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal)|66%|Easy|[python.py](Solutions/589-N-ary-Tree-Preorder-Traversal/python.py)|
+|590|[N-ary Tree Postorder Traversal](https://leetcode.com/problems/n-ary-tree-postorder-traversal)|66%|Easy|[python.py](Solutions/590-N-ary-Tree-Postorder-Traversal/python.py)|
 |593|[Valid Square](https://leetcode.com/problems/valid-square)|40%|Medium|[python.py](Solutions/593-Valid-Square/python.py)|
 |594|[Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence)|43%|Easy|[python.py](Solutions/594-Longest-Harmonious-Subsequence/python.py)|
 |598|[Range Addition II](https://leetcode.com/problems/range-addition-ii)|48%|Easy|[python.py](Solutions/598-Range-Addition-II/python.py)|
@@ -531,9 +534,9 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |638|[Shopping Offers](https://leetcode.com/problems/shopping-offers)|48%|Medium|[python.py](Solutions/638-Shopping-Offers/python.py)|
 |640|[Solve the Equation](https://leetcode.com/problems/solve-the-equation)|40%|Medium|[python.py](Solutions/640-Solve-the-Equation/python.py)|
 |641|[Design Circular Deque](https://leetcode.com/problems/design-circular-deque)|49%|Medium|[python.py](Solutions/641-Design-Circular-Deque/python.py)|
-|642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system)|35%|Hard|[python.py](Solutions/642-Design-Search-Autocomplete-System/python.py)|
+|642|[Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system)|36%|Hard|[python.py](Solutions/642-Design-Search-Autocomplete-System/python.py)|
 |643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i)|39%|Easy|[python.py](Solutions/643-Maximum-Average-Subarray-I/python.py)|
-|644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii)|27%|Hard|[python.py](Solutions/644-Maximum-Average-Subarray-II/python.py)|
+|644|[Maximum Average Subarray II](https://leetcode.com/problems/maximum-average-subarray-ii)|28%|Hard|[python.py](Solutions/644-Maximum-Average-Subarray-II/python.py)|
 |645|[Set Mismatch](https://leetcode.com/problems/set-mismatch)|40%|Easy|[python.py](Solutions/645-Set-Mismatch/python.py)|
 |646|[Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain)|48%|Medium|[python.py](Solutions/646-Maximum-Length-of-Pair-Chain/python.py)|
 |647|[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)|55%|Medium|[python.py](Solutions/647-Palindromic-Substrings/python.py)|
@@ -573,10 +576,10 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |688|[Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard)|43%|Medium|[python.py](Solutions/688-Knight-Probability-in-Chessboard/python.py)|
 |689|[Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays)|43%|Hard|[python.py](Solutions/689-Maximum-Sum-of-3-Non-Overlapping-Subarrays/python.py)|
 |690|[Employee Importance](https://leetcode.com/problems/employee-importance)|53%|Easy|[python.py](Solutions/690-Employee-Importance/python.py)|
-|692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)|44%|Medium|[python.py](Solutions/692-Top-K-Frequent-Words/python.py)|
+|692|[Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)|45%|Medium|[python.py](Solutions/692-Top-K-Frequent-Words/python.py)|
 |693|[Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits)|57%|Easy|[python.py](Solutions/693-Binary-Number-with-Alternating-Bits/python.py)|
 |694|[Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands)|49%|Medium|[python.py](Solutions/694-Number-of-Distinct-Islands/python.py)|
-|695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island)|55%|Medium|[python.py](Solutions/695-Max-Area-of-Island/python.py)|
+|695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island)|56%|Medium|[python.py](Solutions/695-Max-Area-of-Island/python.py)|
 |696|[Count Binary Substrings](https://leetcode.com/problems/count-binary-substrings)|52%|Easy|[python.py](Solutions/696-Count-Binary-Substrings/python.py)|
 |697|[Degree of an Array](https://leetcode.com/problems/degree-of-an-array)|49%|Easy|[python.py](Solutions/697-Degree-of-an-Array/python.py)|
 |698|[Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|41%|Medium|[python.py](Solutions/698-Partition-to-K-Equal-Sum-Subsets/python.py)|
@@ -596,7 +599,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |716|[Max Stack](https://leetcode.com/problems/max-stack)|39%|Easy|[python.py](Solutions/716-Max-Stack/python.py)|
 |717|[1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters)|49%|Easy|[python.py](Solutions/717-1-bit-and-2-bit-Characters/python.py)|
 |718|[Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)|44%|Medium|[python.py](Solutions/718-Maximum-Length-of-Repeated-Subarray/python.py)|
-|719|[Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)|28%|Hard|[python.py](Solutions/719-Find-K-th-Smallest-Pair-Distance/python.py)|
+|719|[Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)|29%|Hard|[python.py](Solutions/719-Find-K-th-Smallest-Pair-Distance/python.py)|
 |720|[Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary)|44%|Easy|[python.py](Solutions/720-Longest-Word-in-Dictionary/python.py)|
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge)|38%|Medium|[python.py](Solutions/721-Accounts-Merge/python.py)|
 |722|[Remove Comments](https://leetcode.com/problems/remove-comments)|30%|Medium|[python.py](Solutions/722-Remove-Comments/python.py)|
@@ -606,9 +609,9 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |726|[Number of Atoms](https://leetcode.com/problems/number-of-atoms)|44%|Hard|[python.py](Solutions/726-Number-of-Atoms/python.py)|
 |727|[Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)|36%|Hard|[python.py](Solutions/727-Minimum-Window-Subsequence/python.py)|
 |729|[My Calendar I](https://leetcode.com/problems/my-calendar-i)|46%|Medium|[python.py](Solutions/729-My-Calendar-I/python.py) <br> [cpp.cpp](Solutions/729-My-Calendar-I/cpp.cpp)|
-|731|[My Calendar II](https://leetcode.com/problems/my-calendar-ii)|42%|Medium|[python.py](Solutions/731-My-Calendar-II/python.py) <br> [cpp.cpp](Solutions/731-My-Calendar-II/cpp.cpp)|
+|731|[My Calendar II](https://leetcode.com/problems/my-calendar-ii)|43%|Medium|[python.py](Solutions/731-My-Calendar-II/python.py) <br> [cpp.cpp](Solutions/731-My-Calendar-II/cpp.cpp)|
 |732|[My Calendar III](https://leetcode.com/problems/my-calendar-iii)|53%|Hard|[python.py](Solutions/732-My-Calendar-III/python.py)|
-|733|[Flood Fill](https://leetcode.com/problems/flood-fill)|49%|Easy|[python.py](Solutions/733-Flood-Fill/python.py)|
+|733|[Flood Fill](https://leetcode.com/problems/flood-fill)|50%|Easy|[python.py](Solutions/733-Flood-Fill/python.py)|
 |734|[Sentence Similarity](https://leetcode.com/problems/sentence-similarity)|40%|Easy|[python.py](Solutions/734-Sentence-Similarity/python.py)|
 |735|[Asteroid Collision](https://leetcode.com/problems/asteroid-collision)|38%|Medium|[python.py](Solutions/735-Asteroid-Collision/python.py)|
 |737|[Sentence Similarity II](https://leetcode.com/problems/sentence-similarity-ii)|42%|Medium|[python.py](Solutions/737-Sentence-Similarity-II/python.py)|
@@ -627,7 +630,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |752|[Open the Lock](https://leetcode.com/problems/open-the-lock)|44%|Medium|[python.py](Solutions/752-Open-the-Lock/python.py)|
 |754|[Reach a Number](https://leetcode.com/problems/reach-a-number)|31%|Easy|[python.py](Solutions/754-Reach-a-Number/python.py)|
 |756|[Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix)|50%|Medium|[python.py](Solutions/756-Pyramid-Transition-Matrix/python.py)|
-|758|[Bold Words in String](https://leetcode.com/problems/bold-words-in-string)|41%|Easy|[python.py](Solutions/758-Bold-Words-in-String/python.py)|
+|758|[Bold Words in String](https://leetcode.com/problems/bold-words-in-string)|42%|Easy|[python.py](Solutions/758-Bold-Words-in-String/python.py)|
 |759|[Employee Free Time](https://leetcode.com/problems/employee-free-time)|60%|Hard|[python.py](Solutions/759-Employee-Free-Time/python.py)|
 |760|[Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings)|79%|Easy|[python.py](Solutions/760-Find-Anagram-Mappings/python.py)|
 |762|[Prime Number of Set Bits in Binary Representation](https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation)|58%|Easy|[python.py](Solutions/762-Prime-Number-of-Set-Bits-in-Binary-Representation/python.py)|
@@ -648,7 +651,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |781|[Rabbits in Forest](https://leetcode.com/problems/rabbits-in-forest)|50%|Medium|[python.py](Solutions/781-Rabbits-in-Forest/python.py)|
 |784|[Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation)|55%|Easy|[python.py](Solutions/784-Letter-Case-Permutation/python.py)|
 |785|[Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite?)|42%|Medium|[python.py](Solutions/785-Is-Graph-Bipartite?/python.py)|
-|787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)|33%|Medium|[python.py](Solutions/787-Cheapest-Flights-Within-K-Stops/python.py)|
+|787|[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)|34%|Medium|[python.py](Solutions/787-Cheapest-Flights-Within-K-Stops/python.py)|
 |788|[Rotated Digits](https://leetcode.com/problems/rotated-digits)|53%|Easy|[python.py](Solutions/788-Rotated-Digits/python.py)|
 |790|[Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling)|35%|Medium|[python.py](Solutions/790-Domino-and-Tromino-Tiling/python.py)|
 |791|[Custom Sort String](https://leetcode.com/problems/custom-sort-string)|61%|Medium|[python.py](Solutions/791-Custom-Sort-String/python.py)|
@@ -658,7 +661,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |796|[Rotate String](https://leetcode.com/problems/rotate-string)|49%|Easy|[python.py](Solutions/796-Rotate-String/python.py)|
 |797|[All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target)|69%|Medium|[python.py](Solutions/797-All-Paths-From-Source-to-Target/python.py)|
 |799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)|33%|Medium|[python.py](Solutions/799-Champagne-Tower/python.py)|
-|800|[Similar RGB Color](https://leetcode.com/problems/similar-rgb-color)|58%|Easy|[python.py](Solutions/800-Similar-RGB-Color/python.py)|
+|800|[Similar RGB Color](https://leetcode.com/problems/similar-rgb-color)|59%|Easy|[python.py](Solutions/800-Similar-RGB-Color/python.py)|
 |801|[Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing)|34%|Medium|[python.py](Solutions/801-Minimum-Swaps-To-Make-Sequences-Increasing/python.py)|
 |802|[Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states)|42%|Medium|[python.py](Solutions/802-Find-Eventual-Safe-States/python.py)|
 |804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words)|74%|Easy|[python.py](Solutions/804-Unique-Morse-Code-Words/python.py)|
@@ -669,7 +672,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |812|[Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area)|55%|Easy|[python.py](Solutions/812-Largest-Triangle-Area/python.py)|
 |813|[Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages)|43%|Medium|[python.py](Solutions/813-Largest-Sum-of-Averages/python.py)|
 |814|[Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning)|70%|Medium|[python.py](Solutions/814-Binary-Tree-Pruning/python.py)|
-|815|[Bus Routes](https://leetcode.com/problems/bus-routes)|38%|Hard|[python.py](Solutions/815-Bus-Routes/python.py)|
+|815|[Bus Routes](https://leetcode.com/problems/bus-routes)|39%|Hard|[python.py](Solutions/815-Bus-Routes/python.py)|
 |817|[Linked List Components](https://leetcode.com/problems/linked-list-components)|53%|Medium|[python.py](Solutions/817-Linked-List-Components/python.py)|
 |818|[Race Car](https://leetcode.com/problems/race-car)|34%|Hard|[python.py](Solutions/818-Race-Car/python.py)|
 |819|[Most Common Word](https://leetcode.com/problems/most-common-word)|41%|Easy|[python.py](Solutions/819-Most-Common-Word/python.py)|
@@ -687,7 +690,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |833|[Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string)|44%|Medium|[python.py](Solutions/833-Find-And-Replace-in-String/python.py)|
 |834|[Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree)|38%|Hard|[python.py](Solutions/834-Sum-of-Distances-in-Tree/python.py)|
 |835|[Image Overlap](https://leetcode.com/problems/image-overlap)|50%|Medium|[python.py](Solutions/835-Image-Overlap/python.py)|
-|836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap)|45%|Easy|[python.py](Solutions/836-Rectangle-Overlap/python.py)|
+|836|[Rectangle Overlap](https://leetcode.com/problems/rectangle-overlap)|46%|Easy|[python.py](Solutions/836-Rectangle-Overlap/python.py)|
 |838|[Push Dominoes](https://leetcode.com/problems/push-dominoes)|43%|Medium|[python.py](Solutions/838-Push-Dominoes/python.py)|
 |840|[Magic Squares In Grid](https://leetcode.com/problems/magic-squares-in-grid)|35%|Easy|[python.py](Solutions/840-Magic-Squares-In-Grid/python.py)|
 |841|[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms)|59%|Medium|[python.py](Solutions/841-Keys-and-Rooms/python.py)|
@@ -739,7 +742,7 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |901|[Online Stock Span](https://leetcode.com/problems/online-stock-span)|46%|Medium|[python.py](Solutions/901-Online-Stock-Span/python.py)|
 |904|[Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets)|41%|Medium|[python.py](Solutions/904-Fruit-Into-Baskets/python.py)|
 |905|[Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity)|72%|Easy|[python.py](Solutions/905-Sort-Array-By-Parity/python.py)|
-|907|[Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums)|24%|Medium|[python.py](Solutions/907-Sum-of-Subarray-Minimums/python.py)|
+|907|[Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums)|25%|Medium|[python.py](Solutions/907-Sum-of-Subarray-Minimums/python.py)|
 |908|[Smallest Range I](https://leetcode.com/problems/smallest-range-i)|64%|Easy|[python.py](Solutions/908-Smallest-Range-I/python.py)|
 |911|[Online Election](https://leetcode.com/problems/online-election)|43%|Medium|[python.py](Solutions/911-Online-Election/python.py)|
 |914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards)|34%|Easy|[python.py](Solutions/914-X-of-a-Kind-in-a-Deck-of-Cards/python.py) <br> [cpp.cpp](Solutions/914-X-of-a-Kind-in-a-Deck-of-Cards/cpp.cpp)|
@@ -748,9 +751,9 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |917|[Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters)|56%|Easy|[python.py](Solutions/917-Reverse-Only-Letters/python.py)|
 |918|[Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray)|29%|Medium|[python.py](Solutions/918-Maximum-Sum-Circular-Subarray/python.py)|
 |919|[Complete Binary Tree Inserter](https://leetcode.com/problems/complete-binary-tree-inserter)|55%|Medium|[python.py](Solutions/919-Complete-Binary-Tree-Inserter/python.py)|
-|920|[Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists)|43%|Hard|[python.py](Solutions/920-Number-of-Music-Playlists/python.py)|
+|920|[Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists)|42%|Hard|[python.py](Solutions/920-Number-of-Music-Playlists/python.py)|
 |921|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|70%|Medium|[python.py](Solutions/921-Minimum-Add-to-Make-Parentheses-Valid/python.py)|
-|922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii)|66%|Easy|[python.py](Solutions/922-Sort-Array-By-Parity-II/python.py)|
+|922|[Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii)|67%|Easy|[python.py](Solutions/922-Sort-Array-By-Parity-II/python.py)|
 |923|[3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity)|31%|Medium|[python.py](Solutions/923-3Sum-With-Multiplicity/python.py)|
 |924|[Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread)|38%|Hard|[python.py](Solutions/924-Minimize-Malware-Spread/python.py)|
 |925|[Long Pressed Name](https://leetcode.com/problems/long-pressed-name)|44%|Easy|[python.py](Solutions/925-Long-Pressed-Name/python.py)|
@@ -760,18 +763,18 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |929|[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses)|79%|Easy|[python.py](Solutions/929-Unique-Email-Addresses/python.py)|
 |930|[Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)|36%|Medium|[python.py](Solutions/930-Binary-Subarrays-With-Sum/python.py)|
 |931|[Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum)|57%|Medium|[python.py](Solutions/931-Minimum-Falling-Path-Sum/python.py)|
-|932|[Beautiful Array](https://leetcode.com/problems/beautiful-array)|50%|Medium|[python.py](Solutions/932-Beautiful-Array/python.py)|
+|932|[Beautiful Array](https://leetcode.com/problems/beautiful-array)|51%|Medium|[python.py](Solutions/932-Beautiful-Array/python.py)|
 |933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls)|68%|Easy|[python.py](Solutions/933-Number-of-Recent-Calls/python.py)|
 |934|[Shortest Bridge](https://leetcode.com/problems/shortest-bridge)|43%|Medium|[python.py](Solutions/934-Shortest-Bridge/python.py)|
 |935|[Knight Dialer](https://leetcode.com/problems/knight-dialer)|37%|Medium|[python.py](Solutions/935-Knight-Dialer/python.py)|
 |936|[Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence)|35%|Hard|[python.py](Solutions/936-Stamping-The-Sequence/python.py)|
 |937|[Reorder Log Files](https://leetcode.com/problems/reorder-log-files)|58%|Easy|[python.py](Solutions/937-Reorder-Log-Files/python.py)|
-|938|[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)|80%|Medium|[python.py](Solutions/938-Range-Sum-of-BST/python.py)|
+|938|[Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)|81%|Medium|[python.py](Solutions/938-Range-Sum-of-BST/python.py)|
 |939|[Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle)|48%|Medium|[python.py](Solutions/939-Minimum-Area-Rectangle/python.py)|
 |940|[Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii)|37%|Hard|[python.py](Solutions/940-Distinct-Subsequences-II/python.py)|
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array)|35%|Easy|[python.py](Solutions/941-Valid-Mountain-Array/python.py)|
 |942|[DI String Match](https://leetcode.com/problems/di-string-match)|70%|Easy|[python.py](Solutions/942-DI-String-Match/python.py)|
-|943|[Find the Shortest Superstring](https://leetcode.com/problems/find-the-shortest-superstring)|33%|Hard|[python.py](Solutions/943-Find-the-Shortest-Superstring/python.py)|
+|943|[Find the Shortest Superstring](https://leetcode.com/problems/find-the-shortest-superstring)|34%|Hard|[python.py](Solutions/943-Find-the-Shortest-Superstring/python.py)|
 |944|[Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted)|70%|Easy|[python.py](Solutions/944-Delete-Columns-to-Make-Sorted/python.py)|
 |945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique)|41%|Medium|[python.py](Solutions/945-Minimum-Increment-to-Make-Array-Unique/python.py)|
 |946|[Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences)|58%|Medium|[python.py](Solutions/946-Validate-Stack-Sequences/python.py)|
@@ -788,13 +791,13 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |957|[Prison Cells After N Days](https://leetcode.com/problems/prison-cells-after-n-days)|37%|Medium|[python.py](Solutions/957-Prison-Cells-After-N-Days/python.py)|
 |958|[Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|46%|Medium|[python.py](Solutions/958-Check-Completeness-of-a-Binary-Tree/python.py)|
 |959|[Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes)|62%|Medium|[python.py](Solutions/959-Regions-Cut-By-Slashes/python.py)|
-|960|[Delete Columns to Make Sorted III](https://leetcode.com/problems/delete-columns-to-make-sorted-iii)|51%|Hard|[python.py](Solutions/960-Delete-Columns-to-Make-Sorted-III/python.py)|
+|960|[Delete Columns to Make Sorted III](https://leetcode.com/problems/delete-columns-to-make-sorted-iii)|52%|Hard|[python.py](Solutions/960-Delete-Columns-to-Make-Sorted-III/python.py)|
 |961|[N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array)|73%|Easy|[python.py](Solutions/961-N-Repeated-Element-in-Size-2N-Array/python.py)|
 |962|[Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp)|39%|Medium|[python.py](Solutions/962-Maximum-Width-Ramp/python.py)|
 |963|[Minimum Area Rectangle II](https://leetcode.com/problems/minimum-area-rectangle-ii)|41%|Medium|[python.py](Solutions/963-Minimum-Area-Rectangle-II/python.py)|
 |964|[Least Operators to Express Number](https://leetcode.com/problems/least-operators-to-express-number)|40%|Hard||
 |965|[Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree)|68%|Easy|[python.py](Solutions/965-Univalued-Binary-Tree/python.py)|
-|966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker)|38%|Medium|[python.py](Solutions/966-Vowel-Spellchecker/python.py)|
+|966|[Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker)|39%|Medium|[python.py](Solutions/966-Vowel-Spellchecker/python.py)|
 |967|[Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences)|36%|Medium|[python.py](Solutions/967-Numbers-With-Same-Consecutive-Differences/python.py)|
 |968|[Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras)|33%|Hard|[python.py](Solutions/968-Binary-Tree-Cameras/python.py)|
 |969|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting)|62%|Medium|[python.py](Solutions/969-Pancake-Sorting/python.py)|
@@ -802,16 +805,16 @@ Python scripts are included to crawl the problem info from [Leetcode](https://le
 |971|[Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal)|42%|Medium|[python.py](Solutions/971-Flip-Binary-Tree-To-Match-Preorder-Traversal/python.py)|
 |972|[Equal Rational Numbers](https://leetcode.com/problems/equal-rational-numbers)|40%|Hard|[python.py](Solutions/972-Equal-Rational-Numbers/python.py)|
 |973|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)|67%|Easy|[python.py](Solutions/973-K-Closest-Points-to-Origin/python.py)|
-|974|[Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k)|39%|Medium|[python.py](Solutions/974-Subarray-Sums-Divisible-by-K/python.py)|
-|976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle)|56%|Easy|[python.py](Solutions/976-Largest-Perimeter-Triangle/python.py)|
+|974|[Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k)|40%|Medium|[python.py](Solutions/974-Subarray-Sums-Divisible-by-K/python.py)|
+|976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle)|57%|Easy|[python.py](Solutions/976-Largest-Perimeter-Triangle/python.py)|
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array)|74%|Easy|[python.py](Solutions/977-Squares-of-a-Sorted-Array/python.py)|
 |978|[Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray)|46%|Medium|[python.py](Solutions/978-Longest-Turbulent-Subarray/python.py)|
 |979|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree)|65%|Medium|[python.py](Solutions/979-Distribute-Coins-in-Binary-Tree/python.py)|
-|980|[Unique Paths III](https://leetcode.com/problems/unique-paths-iii)|73%|Hard|[python.py](Solutions/980-Unique-Paths-III/python.py)|
+|980|[Unique Paths III](https://leetcode.com/problems/unique-paths-iii)|72%|Hard|[python.py](Solutions/980-Unique-Paths-III/python.py)|
 |981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store)|48%|Medium|[python.py](Solutions/981-Time-Based-Key-Value-Store/python.py)|
 |983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)|57%|Medium|[python.py](Solutions/983-Minimum-Cost-For-Tickets/python.py)|
-|984|[String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb)|31%|Easy|[python.py](Solutions/984-String-Without-AAA-or-BBB/python.py)|
-|985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries)|70%|Easy|[python.py](Solutions/985-Sum-of-Even-Numbers-After-Queries/python.py)|
-|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections)|56%|Medium|[python.py](Solutions/986-Interval-List-Intersections/python.py)|
+|984|[String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb)|32%|Easy|[python.py](Solutions/984-String-Without-AAA-or-BBB/python.py)|
+|985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries)|69%|Easy|[python.py](Solutions/985-Sum-of-Even-Numbers-After-Queries/python.py)|
+|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections)|59%|Medium|[python.py](Solutions/986-Interval-List-Intersections/python.py)|
 |987|[Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|33%|Medium|[python.py](Solutions/987-Vertical-Order-Traversal-of-a-Binary-Tree/python.py)|
 |988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf)|52%|Medium|[python.py](Solutions/988-Smallest-String-Starting-From-Leaf/python.py)|
