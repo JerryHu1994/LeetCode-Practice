@@ -41,7 +41,6 @@ class Twitter(object):
         currtwt = None
         currtwttime = -1
         ret = []
-        print listoftws
         for i in range(10):
             for ind, li in enumerate(listoftws):
                 if len(li) == 0:    continue

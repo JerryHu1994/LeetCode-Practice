@@ -1,6 +1,6 @@
 #!/bin/bash
 #script for initialize all empty code, must be run with root
-for ((i=1100; i<2000;i++))
+for ((i=2001; i<2500;i++))
 do
     filename="$i."
     mkdir $filename
